@@ -1,10 +1,12 @@
-OT_NAME = 'pep_parse'
+from pathlib import Path
+
+BOT_NAME = 'pep_parse'
 
 SPIDER_MODULES = ['pep_parse.spiders']
 
 ROBOTSTXT_OBEY = True
 
-
+BASE_DIR = Path(__file__).parent.parent
 RESULTS_DIR = 'results'
 
 ITEM_PIPELINES = {
